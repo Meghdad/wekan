@@ -116,7 +116,7 @@ services:
     # a) For Wekan Meteor 1.8.x version at master branch,
     #    using https://quay.io/wekan/wekan automatic builds
     # image: quay.io/wekan/wekan
-    image: meghdadhatami/wekan:firsttry
+    image: meghdadhatami/wekan:latest
     # b) Using specific Meteor 1.6.x version tag:
     # image: quay.io/wekan/wekan:v1.95
     # c) Using Docker Hub automatic builds https://hub.docker.com/r/wekanteam/wekan
@@ -162,7 +162,7 @@ services:
       #  - http://example.com
       #  - http://boards.example.com
       #  - http://192.168.1.100    <=== using at local LAN
-      - ROOT_URL=http://localhost  #   <=== using only at same laptop/desktop where Wekan is installed
+      - ROOT_URL=http://localhost:1234  #   <=== using only at same laptop/desktop where Wekan is installed
       #---------------------------------------------------------------
       # ==== EMAIL SETTINGS ====
       # Email settings are required in both MAIL_URL and Admin Panel,
